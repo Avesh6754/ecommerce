@@ -4,7 +4,7 @@ List productlist=[
   {
     'name':'',
     'Brand':'',
-    'image':'assets/image/p1.jpg',
+    'image':'assets/image/p1.png',
     'price':4,
     'description':""
   },
@@ -25,7 +25,7 @@ List productlist=[
   {
     'name':'',
     'Brand':'',
-    'image':'assets/image/p4.jpg',
+    'image':'assets/image/p2.png',
     'price':4,
     'description':""
   },
@@ -39,35 +39,7 @@ List productlist=[
   {
     'name':'',
     'Brand':'',
-    'image':'assets/image/p2.jpg',
-    'price':4,
-    'description':""
-  },
-  {
-    'name':'',
-    'Brand':'',
-    'image':'',
-    'price':4,
-    'description':""
-  },
-  {
-    'name':'',
-    'Brand':'',
-    'image':'',
-    'price':4,
-    'description':""
-  },
-  {
-    'name':'',
-    'Brand':'',
-    'image':'',
-    'price':4,
-    'description':""
-  },
-  {
-    'name':'',
-    'Brand':'',
-    'image':'assets/image/p3.jpg',
+    'image':'assets/image/p3.png',
     'price':4,
     'description':""
   },
@@ -88,7 +60,14 @@ List productlist=[
   {
     'name':'',
     'Brand':'',
-    'image':'assets/image/p5.jpg',
+    'image':'',
+    'price':4,
+    'description':""
+  },
+  {
+    'name':'',
+    'Brand':'',
+    'image':'assets/image/p4.png',
     'price':4,
     'description':""
   },
@@ -109,7 +88,28 @@ List productlist=[
   {
     'name':'',
     'Brand':'',
-    'image':'assets/image/p6.jpg',
+    'image':'assets/image/p5.png',
+    'price':4,
+    'description':""
+  },
+  {
+    'name':'',
+    'Brand':'',
+    'image':'',
+    'price':4,
+    'description':""
+  },
+  {
+    'name':'',
+    'Brand':'',
+    'image':'',
+    'price':4,
+    'description':""
+  },
+  {
+    'name':'',
+    'Brand':'',
+    'image':'assets/image/p6.png',
     'price':4,
     'description':""
   },
