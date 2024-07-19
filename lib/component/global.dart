@@ -2,143 +2,140 @@ import 'package:flutter/material.dart';
 
 List productlist=[
   {
-    'name':'',
-    'Brand':'',
-    'image':'assets/image/p1.png',
-    'price':4,
+    'name':'Blue Star Ac',
+    'image':'assets/image/a1-removebg-preview.png',
+    'price':26000,
     'description':""
   },
   {
-    'name':'',
-    'Brand':'',
-    'image':'',
-    'price':4,
+    'name':'Godrej Ac',
+    'image':'assets/image/a2-removebg-preview.png',
+    'price':30000,
     'description':""
   },
   {
-    'name':'',
-    'Brand':'',
-    'image':'',
-    'price':4,
+    'name':'Hitachi Ac',
+    'image':'assets/image/a3-removebg-preview.png',
+    'price':25000,
     'description':""
   },
   {
-    'name':'',
+    'name':'Dell Pc',
     'Brand':'',
-    'image':'assets/image/p2.png',
-    'price':4,
+    'image':'assets/image/c1-removebg-preview.png',
+    'price':50000,
     'description':""
   },
   {
-    'name':'',
+    'name':'Boat Earphone',
     'Brand':'',
-    'image':'',
-    'price':4,
+    'image':'assets/image/e1-removebg-preview.png',
+    'price':5500,
     'description':""
   },
   {
-    'name':'',
+    'name':'Lenovo Laptop',
     'Brand':'',
-    'image':'assets/image/p3.png',
-    'price':4,
+    'image':'assets/image/l1-removebg-preview.png',
+    'price':120000,
     'description':""
   },
   {
-    'name':'',
+    'name':'Apple Watch',
     'Brand':'',
-    'image':'',
-    'price':4,
+    'image':'assets/image/p1-removebg-preview.png',
+    'price':18000,
     'description':""
   },
   {
-    'name':'',
+    'name':'Godrej Tv',
     'Brand':'',
-    'image':'',
-    'price':4,
+    'image':'assets/image/t1-removebg-preview.png',
+    'price':50000,
     'description':""
   },
   {
-    'name':'',
+    'name':'Titan Watch',
     'Brand':'',
-    'image':'',
-    'price':4,
+    'image':'assets/image/w1-removebg-preview.png',
+    'price':2000,
     'description':""
   },
   {
-    'name':'',
+    'name':'Lenovo Pc',
     'Brand':'',
-    'image':'assets/image/p4.png',
-    'price':4,
+    'image':'assets/image/c2-removebg-preview.png',
+    'price':80000,
     'description':""
   },
   {
-    'name':'',
+    'name':'Noise Earphone',
     'Brand':'',
-    'image':'',
-    'price':4,
+    'image':'assets/image/e2-removebg-preview.png',
+    'price':4000,
     'description':""
   },
   {
-    'name':'',
+    'name':'Asus Laptop',
     'Brand':'',
-    'image':'',
-    'price':4,
+    'image':'assets/image/l2-removebg-preview.png',
+    'price':40000,
     'description':""
   },
   {
-    'name':'',
+    'name':'Redmi 10',
     'Brand':'',
-    'image':'assets/image/p5.png',
-    'price':4,
+    'image':'assets/image/p2-removebg-preview.png',
+    'price':18000,
     'description':""
   },
   {
-    'name':'',
+    'name':'Redmi Tv',
     'Brand':'',
-    'image':'',
-    'price':4,
+    'image':'assets/image/t2-removebg-preview-Copy.png',
+    'price':60000,
     'description':""
   },
   {
-    'name':'',
+    'name':'Sport Watch',
     'Brand':'',
-    'image':'',
-    'price':4,
+    'image':'assets/image/w2-removebg-preview-Copy.png',
+    'price':7500,
     'description':""
   },
   {
-    'name':'',
+    'name':'Intel Pc',
     'Brand':'',
-    'image':'assets/image/p6.png',
-    'price':4,
+    'image':'assets/image/c3-removebg-preview-Copy.png',
+    'price':48000,
     'description':""
   },
   {
-    'name':'',
+    'name':'Vivobook',
     'Brand':'',
-    'image':'',
-    'price':4,
+    'image':'assets/image/l3-removebg-preview.png',
+    'price':72000,
     'description':""
   },
   {
-    'name':'',
+    'name':'iPhone X',
     'Brand':'',
-    'image':'assets/image/p7.jpg',
-    'price':4,
+    'image':'assets/image/p3-removebg-preview.png',
+    'price':185000,
     'description':""
   },
   {
-    'name':'',
+    'name':'Soney Tv',
     'Brand':'',
-    'image':'',
-    'price':4,
+    'image':'assets/image/t3-removebg-preview-Copy.png',
+    'price':55000,
     'description':""
   },
   {
-    'name':'',
+    'name':'Vivo 21',
     'Brand':'',
-    'image':'',
-    'price':4,
+    'image':'assets/image/p4-removebg-preview.png',
+    'price':22000,
     'description':""
   },
 ];
