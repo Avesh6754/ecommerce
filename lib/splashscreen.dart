@@ -16,7 +16,7 @@ class _SplashscreenState extends State<Splashscreen> {
   {
     super.initState();
     Timer(Duration(seconds:2),(){
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Homepage()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const Homepage()));
     });
   }
   @override
@@ -30,7 +30,7 @@ class _SplashscreenState extends State<Splashscreen> {
             Container(
               height: 500,
               width: 500,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
 
                 image: DecorationImage(
                   image: AssetImage('assets/image/7931789-removebg-preview.png'),

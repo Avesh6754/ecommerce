@@ -12,9 +12,10 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: const EdgeInsets.fromLTRB(10,50,0,0),
+            padding: const EdgeInsets.fromLTRB(10, 50, 0, 0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -24,9 +25,11 @@ class _HomepageState extends State<Homepage> {
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(50),
-
                   ),
-                  child: Icon(Icons.menu,color: Colors.white,),
+                  child: const Icon(
+                    Icons.menu,
+                    color: Colors.white,
+                  ),
                 ),
                 Container(
                   margin: EdgeInsets.only(right: 10),
@@ -35,13 +38,28 @@ class _HomepageState extends State<Homepage> {
                   decoration: BoxDecoration(
                     color: Colors.grey,
                     borderRadius: BorderRadius.circular(50),
-
                   ),
-
                 ),
-
               ],
             ),
+          ),
+          const Padding(
+            padding: EdgeInsets.all(10),
+            child: Text.rich(TextSpan(children: [
+              TextSpan(
+                  text: "Welcome,\n",
+                  style: TextStyle(
+                    fontSize: 35,
+                    fontWeight: FontWeight.bold,
+                  )),
+              TextSpan(
+                  text: "Our Fashion App ",
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.grey
+                  ))
+            ])),
           )
         ],
       ),
