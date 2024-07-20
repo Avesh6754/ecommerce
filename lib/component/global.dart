@@ -3,130 +3,184 @@ import 'package:flutter/material.dart';
 List productlist=[
   {
     'name':'Blue Star Ac',
+    "Brand":'Blue Star',
+    "Color":"White Air",
+    "style":"Modern",
+    "Model Name":"Color Fit Pluse",
     'image':'assets/image/a1-removebg-preview.png',
     'price':26000,
-    'description':""
   },
   {
     'name':'Godrej Ac',
+    "Brand":'Godrej',
+    "Color":"Ligth Air",
+    "style":"Modern",
+    "Model Name":"Color Fit Pluse",
     'image':'assets/image/a2-removebg-preview.png',
     'price':30000,
-    'description':""
   },
   {
     'name':'Hitachi Ac',
+    "Brand":'Hitachi',
+    "Color":"Blue Air",
+    "style":"Classic",
+    "Model Name":"Color Fit Pluse 3",
     'image':'assets/image/a3-removebg-preview.png',
     'price':25000,
-    'description':""
   },
   {
     'name':'Dell Pc',
-    'Brand':'',
+    "Brand":'Dell',
+    "Color":"Ligth Black",
+    "style":"Modern",
+    "Model Name":"Ultra Fit Pluse",
     'image':'assets/image/c1-removebg-preview.png',
     'price':50000,
-    'description':""
+
   },
   {
     'name':'Boat Earphone',
-    'Brand':'',
+    "Brand":'Boat',
+    "Color":"White Air",
+    "style":"Modern",
+    "Model Name":"Ultra",
     'image':'assets/image/e1-removebg-preview.png',
     'price':5500,
-    'description':""
   },
   {
     'name':'Lenovo Laptop',
-    'Brand':'',
+    "Brand":'Lenove',
+    "Color":"White Air",
+    "style":"Modern",
+    "Model Name":"Color Fit Pluse",
     'image':'assets/image/l1-removebg-preview.png',
     'price':120000,
-    'description':""
+
   },
   {
     'name':'Apple Watch',
-    'Brand':'',
+    "Brand":'Apple',
+    "Color":"White Air",
+    "style":"Modern",
+    "Model Name":"Color Fit Pluse",
     'image':'assets/image/p1-removebg-preview.png',
     'price':18000,
-    'description':""
   },
   {
     'name':'Godrej Tv',
-    'Brand':'',
+    "Brand":'Godrej',
+    "Color":"White Air",
+    "style":"Modern",
+    "Model Name":"Color Fit Pluse",
     'image':'assets/image/t1-removebg-preview.png',
     'price':50000,
-    'description':""
   },
   {
     'name':'Titan Watch',
-    'Brand':'',
+    "Brand":'Titan',
+    "Color":"White Air",
+    "style":"Modern",
+    "Model Name":"Color Fit Pluse",
     'image':'assets/image/w1-removebg-preview.png',
     'price':2000,
     'description':""
   },
   {
     'name':'Lenovo Pc',
-    'Brand':'',
+    "Brand":'Lenovo Star',
+    "Color":"White Air",
+    "style":"Modern",
+    "Model Name":"Color Fit Pluse",
     'image':'assets/image/c2-removebg-preview.png',
     'price':80000,
     'description':""
   },
   {
     'name':'Noise Earphone',
-    'Brand':'',
+    "Brand":'Noise',
+    "Color":"White Air",
+    "style":"Modern",
+    "Model Name":"Color Fit Pluse",
     'image':'assets/image/e2-removebg-preview.png',
     'price':4000,
     'description':""
   },
   {
     'name':'Asus Laptop',
-    'Brand':'',
+    "Brand":'Asus',
+    "Color":"White Air",
+    "style":"Modern",
+    "Model Name":"Color Fit Pluse",
     'image':'assets/image/l2-removebg-preview.png',
     'price':40000,
     'description':""
   },
   {
     'name':'Redmi 10',
-    'Brand':'',
+    "Brand":'Mi',
+    "Color":"White Air",
+    "style":"Modern",
+    "Model Name":"Color Fit Pluse",
     'image':'assets/image/p2-removebg-preview.png',
     'price':18000,
     'description':""
   },
   {
     'name':'Redmi Tv',
-    'Brand':'',
+    "Brand":'Mi',
+    "Color":"White Air",
+    "style":"Modern",
+    "Model Name":"Color Fit Pluse",
     'image':'assets/image/t2-removebg-preview-Copy.png',
     'price':60000,
     'description':""
   },
   {
     'name':'Sport Watch',
-    'Brand':'',
+    "Brand":'Blue Star',
+    "Color":"White Air",
+    "style":"Modern",
+    "Model Name":"Color Fit Pluse",
     'image':'assets/image/w2-removebg-preview-Copy.png',
     'price':7500,
     'description':""
   },
   {
     'name':'Intel Pc',
-    'Brand':'',
+    "Brand":'Think',
+    "Color":"White Air",
+    "style":"Modern",
+    "Model Name":"Color Fit Pluse",
     'image':'assets/image/c3-removebg-preview-Copy.png',
     'price':48000,
     'description':""
   },
   {
     'name':'Vivobook',
-    'Brand':'',
+    "Brand":'HP',
+    "Color":"White Air",
+    "style":"Modern",
+    "Model Name":"Color Fit Pluse",
     'image':'assets/image/l3-removebg-preview.png',
     'price':72000,
     'description':""
   },
   {
     'name':'iPhone X',
-    'Brand':'',
+    "Brand":'Apple',
+    "Color":"White Air",
+    "style":"Modern",
+    "Model Name":"Color Fit Pluse",
     'image':'assets/image/p3-removebg-preview.png',
     'price':185000,
     'description':""
   },
   {
     'name':'Soney Tv',
-    'Brand':'',
+    "Brand":'Sony',
+    "Color":"White Air",
+    "style":"Modern",
+    "Model Name":"Color Fit Pluse",
     'image':'assets/image/t3-removebg-preview-Copy.png',
     'price':55000,
     'description':""
@@ -134,7 +188,10 @@ List productlist=[
 
   {
     'name':'Vivo 21',
-    'Brand':'',
+    "Brand":"Vivo",
+    "Color":"White Air",
+    "style":"Modern",
+    "Model Name":"Color Fit Pluse",
     'image':'assets/image/p4-removebg-preview.png',
     'price':22000,
     'description':""
