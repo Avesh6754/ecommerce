@@ -1,7 +1,9 @@
 
 
 import 'package:ecommerce/component/global.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -14,116 +16,117 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+        body: Padding(
+      padding: const EdgeInsets.fromLTRB(15, 40, 15, 0),
+      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(10, 50, 0, 0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    height: 50,
-                    width: 50,
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(50),
-                    ),
-                    child: const Icon(
-                      Icons.menu,
-                      color: Colors.white,
-                    ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.only(right: 10),
-                    height: 50,
-                    width: 50,
-                    decoration: BoxDecoration(
-                      color: Colors.grey,
-                      borderRadius: BorderRadius.circular(50),
-                    ),
-                  ),
-                ],
-              ),
+            Icon(
+              Icons.menu,
+              size: 30,
             ),
-            const Padding(
-              padding: EdgeInsets.all(10),
-              child: Text.rich(TextSpan(children: [
-                TextSpan(
-                    text: "Welcome,\n",
-                    style: TextStyle(
-                      fontSize: 35,
+            Text.rich(TextSpan(children: [
+              TextSpan(
+                  text: 'Swip',
+                  style: TextStyle(
+                      fontSize: 25,
                       fontWeight: FontWeight.bold,
-                    )),
-                TextSpan(
-                    text: "Our Fashion App ",
-                    style: TextStyle(
-                        fontSize: 25,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.grey))
-              ])),
-            ),
-            Wrap(
-              children: [
-                ...List.generate(productlist.length, (index)=>productmethod(image: productlist[index]['image'],name:productlist[index]['name'],price: productlist[index]['price'] ))
-              ],
+                      color: Colors.red)),
+              TextSpan(
+                  text: 'wide',
+                  style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black))
+            ])),
+            Container(
+              height: 40,
+              width: 40,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.red,
+              ),
             )
           ],
         ),
-      ),
-    );
+        SizedBox(
+          height: 20,
+        ),
+        Container(
+          height: 45,
+          width: double.infinity,
+          decoration: BoxDecoration(
+              color: Colors.white,
+              border: Border.all(color: Colors.grey, width: 0.5),
+              borderRadius: BorderRadius.circular(30)),
+          child: Row(
+            children: [
+              SizedBox(
+                width: 10,
+              ),
+              Icon(
+                Icons.search,
+                color: Colors.grey,
+                size: 30,
+              ),
+              Text(
+                '''Search "Smart Phone"''',
+                style: TextStyle(color: Colors.grey),
+              ),
+              SizedBox(
+                width: 30,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 82),
+                child: Icon(
+                  Icons.grid_view_sharp,
+                  color: Colors.red,
+                ),
+              )
+            ],
+          ),
+        ),
+        SizedBox(
+          height: 30,
+        ),
+        Text(
+          'Shop By Category',
+          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+        ),
+        SizedBox(
+          height: 15,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            ...List.generate(Iconslist.length, (index)=>Iconbox(name: Iconslist[index]['name'],id: Iconslist[index]['icon']))
+          ],
+        ),
+      ]),
+    ));
   }
 
-  Stack productmethod({required String name , required var price,required var image}) {
-    return Stack(
-              children: [
-                Container(
-                  margin: EdgeInsets.fromLTRB(15, 15, 10, 0),
-                  height: 220,
-                  width: 150,
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(20),boxShadow: const [BoxShadow(
-                    color: Colors.black12,spreadRadius:0.5,blurRadius: 8
-                  )]),
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              '$name',
-                              style: TextStyle(fontSize: 15),
-                            ),
-                            const Text(
-                              '4.3',
-                              style: TextStyle(fontSize:12),
-                            )
-                          ],
-                        ),
-                        Text(
-                          '\$ $price/-',
-                          style: TextStyle(fontSize: 20),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.fromLTRB(15, 15, 10, 0),
-                  height: 150,
-                  width: 150,
-                  decoration: BoxDecoration(
-                      color: Colors.grey.shade100,
-                      borderRadius: BorderRadius.circular(20),
-                      image: DecorationImage(image: AssetImage(image))),
-                )
-              ],
-            );
+  Column Iconbox({required var name,required dynamic id}) {
+    return Column(
+            children: [
+              Container(
+                height: 70,
+                width: 70,
+                decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.white,
+                    border: Border.all(color: Colors.black12, width: 1)),
+                child: Icon(id,color:Colors.red,size:30),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                '$name',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              )
+            ],
+          );
   }
 }

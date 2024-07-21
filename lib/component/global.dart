@@ -197,3 +197,22 @@ List productlist=[
     'description':""
   },
 ];
+
+List Iconslist=[
+  {
+   "icon": Icons.laptop_chromebook,
+    'name':"Laptop",
+  },
+  {
+    "icon": Icons.wc,
+    'name':"Clothes",
+  },
+  {
+    "icon": Icons.shopping_bag_rounded,
+    'name':"Bag",
+  },
+  {
+    "icon": Icons.do_not_step_rounded,
+    'name':"Shoes",
+  }
+];
