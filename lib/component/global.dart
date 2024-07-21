@@ -75,16 +75,7 @@ List productlist=[
     'image':'assets/image/t1-removebg-preview.png',
     'price':50000,
   },
-  {
-    'name':'Titan Watch',
-    "Brand":'Titan',
-    "Color":"White Air",
-    "style":"Modern",
-    "Model Name":"Color Fit Pluse",
-    'image':'assets/image/w1-removebg-preview.png',
-    'price':2000,
-    'description':""
-  },
+
   {
     'name':'Lenovo Pc',
     "Brand":'Lenovo Star',
@@ -125,36 +116,7 @@ List productlist=[
     'price':18000,
     'description':""
   },
-  {
-    'name':'Redmi Tv',
-    "Brand":'Mi',
-    "Color":"White Air",
-    "style":"Modern",
-    "Model Name":"Color Fit Pluse",
-    'image':'assets/image/t2-removebg-preview-Copy.png',
-    'price':60000,
-    'description':""
-  },
-  {
-    'name':'Sport Watch',
-    "Brand":'Blue Star',
-    "Color":"White Air",
-    "style":"Modern",
-    "Model Name":"Color Fit Pluse",
-    'image':'assets/image/w2-removebg-preview-Copy.png',
-    'price':7500,
-    'description':""
-  },
-  {
-    'name':'Intel Pc',
-    "Brand":'Think',
-    "Color":"White Air",
-    "style":"Modern",
-    "Model Name":"Color Fit Pluse",
-    'image':'assets/image/c3-removebg-preview-Copy.png',
-    'price':48000,
-    'description':""
-  },
+
   {
     'name':'Vivobook',
     "Brand":'HP',
@@ -175,16 +137,6 @@ List productlist=[
     'price':185000,
     'description':""
   },
-  {
-    'name':'Soney Tv',
-    "Brand":'Sony',
-    "Color":"White Air",
-    "style":"Modern",
-    "Model Name":"Color Fit Pluse",
-    'image':'assets/image/t3-removebg-preview-Copy.png',
-    'price':55000,
-    'description':""
-  },
 
   {
     'name':'Vivo 21',
@@ -194,6 +146,16 @@ List productlist=[
     "Model Name":"Color Fit Pluse",
     'image':'assets/image/p4-removebg-preview.png',
     'price':22000,
+    'description':""
+  },
+  {
+    'name':'Lenovo Pc',
+    "Brand":'Lenovo Star',
+    "Color":"White Air",
+    "style":"Modern",
+    "Model Name":"Color Fit Pluse",
+    'image':'assets/image/c2-removebg-preview.png',
+    'price':80000,
     'description':""
   },
 ];
@@ -216,3 +178,6 @@ List Iconslist=[
     'name':"Shoes",
   }
 ];
+
+Color color=Colors.white;
+int seleceted=0;
