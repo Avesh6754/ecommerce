@@ -180,5 +180,99 @@ List Iconslist=[
   }
 ];
 
+List Iconsbottomlist=[
+  Icons.home_filled,
+  Icons.favorite_border,
+  Icons.shopping_bag_outlined,
+  Icons.account_circle_outlined
+];
+
 Color color=Colors.white;
 int seleceted=0;
+
+Column Iconbox({required var name,required dynamic id}) {
+  return Column(
+    children: [
+      Container(
+        height: 70,
+        width: 70,
+        decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: color,
+            border: Border.all(color: Colors.black12, width: 1)),
+        child: Icon(id,color:Colors.red,size:30),
+      ),
+      SizedBox(
+        height: 10,
+      ),
+      Text(
+        '$name',
+        style: TextStyle(fontWeight: FontWeight.bold),
+      )
+    ],
+  );
+}
+
+Stack productbox(
+    {required var Name, required var price, required String imag}) {
+  return Stack(
+    children: [
+
+      Container(
+        margin: EdgeInsets.fromLTRB(5, 20, 5, 0),
+        height: 250,
+        width: 155,
+        decoration: BoxDecoration(
+            color: Colors.white
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          crossAxisAlignment: CrossAxisAlignment.start
+          ,
+          children: [
+            Container(height: 30,
+                width: 90,
+                child: Image(image: AssetImage(
+                    'assets/image/2-removebg-preview.png'))),
+            Text("$Name", style: TextStyle(fontSize: 17,
+                color: Colors.black,
+                height: 1.5,
+                fontWeight: FontWeight.bold),),
+            Text("\$${price.toInt()}/-", style: TextStyle(fontSize: 17,
+                color: Colors.red,
+                fontWeight: FontWeight.bold),),
+          ],
+        ),
+      ),
+      Container(
+        margin: EdgeInsets.fromLTRB(5, 20, 5, 0),
+        height: 165,
+        width: 155,
+        decoration: BoxDecoration(
+            color: Colors.grey.shade100,
+            image: DecorationImage(
+              image: AssetImage('$imag'),
+            )
+        ),
+      ),
+    ],
+
+  );
+}
+List colorlist=[
+  Color(0xff3A6037),
+  Color(0xffCDBD68),
+  Color(0xff3B250E),
+  Color(0xff69ABCE),
+  Color(0xffC0C0C0),
+];
+
+Container lineudf() {
+  return Container(
+    height: 1,
+    width: double.infinity,
+    decoration: BoxDecoration(color: Colors.grey.shade300),
+  );
+}
+Icon iconbottom(var index) => Icon(index,color: Colors.grey.shade400,size: 30,);
+

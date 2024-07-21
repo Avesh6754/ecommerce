@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 
 import '../component/global.dart';
-
-class Cartscreen extends StatefulWidget {
-  const Cartscreen({super.key});
+class Checkout extends StatefulWidget {
+  const Checkout({super.key});
 
   @override
-  State<Cartscreen> createState() => _CartscreenState();
+  State<Checkout> createState() => _CheckoutState();
 }
 
-class _CartscreenState extends State<Cartscreen> {
+class _CheckoutState extends State<Checkout> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +23,7 @@ class _CartscreenState extends State<Cartscreen> {
                   width: 80,
                 ),
                 Text(
-                  'Shopping Cart',
+                  'Checkout ',
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
               ],
@@ -127,21 +126,21 @@ class _CartscreenState extends State<Cartscreen> {
           )
         ],
       ),
-      bottomNavigationBar: Container(
-        height: 60,
-        width: double.infinity,
-        decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(15),
-              topRight: Radius.circular(15),
-            ),
-            border: Border.all(width: 0.5, color: Colors.grey.shade300)),child: Padding(
-        padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
-        child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
-          ...List.generate(Iconsbottomlist.length,(index)=>iconbottom(Iconsbottomlist[index]))
-        ],),
-      ),
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+        child: BottomAppBar(
+          height: 50,
+          color: Colors.red,
+          child: Align(
+              alignment: Alignment.center,
+              child: Text(
+                'Checkout ',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    letterSpacing: 1),
+              )),
+        ),
       ),
     );
   }
