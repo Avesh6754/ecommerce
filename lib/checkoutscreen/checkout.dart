@@ -28,9 +28,11 @@ class _CheckoutState extends State<Checkout> {
                   SizedBox(
                     width: 80,
                   ),
-                  Text(
-                    'Shopping Cart',
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  Align(alignment: Alignment.center,
+                    child: Text(
+                      '     Checkout ',
+                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    ),
                   ),
                 ],
               ),
