@@ -119,9 +119,9 @@ class _HomepageState extends State<Homepage> {
                 ...List.generate(
                     productlist.length,
                     (index) => GestureDetector(onTap: (){
-
+                      selectedindex=index;
                       Navigator.of(context).pushNamed('/detail');
-                      selectedindex=productlist[index];
+
 
                     },
                       child: productbox(
@@ -156,4 +156,4 @@ class _HomepageState extends State<Homepage> {
 
 }
 
-int selectedindex=0;
+var selectedindex=0;

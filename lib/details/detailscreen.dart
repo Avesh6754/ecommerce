@@ -138,20 +138,27 @@ class _DetailscreenState extends State<Detailscreen> {
           ],
         ),
       ),
-      bottomNavigationBar: Padding(
-        padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-        child: BottomAppBar(
-          height: 50,
-          color: Colors.red,
-          child: Align(
-              alignment: Alignment.center,
-              child: Text(
-                'Add to Card ',
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                    letterSpacing: 1),
-              )),
+      bottomNavigationBar: GestureDetector(
+        onTap: ()
+        {
+          Cartlist.add(productlist[selectedindex]);
+          Navigator.of(context).pushNamed('/Cart');
+        },
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+          child: BottomAppBar(
+            height: 50,
+            color: Colors.red,
+            child: Align(
+                alignment: Alignment.center,
+                child: Text(
+                  'Add to Card ',
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                      letterSpacing: 1),
+                )),
+          ),
         ),
       ),
     );

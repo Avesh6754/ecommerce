@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+List Cartlist=[];
 List productlist=[
   {
     'name':'Blue Star Ac',
@@ -275,4 +275,6 @@ Container lineudf() {
   );
 }
 Icon iconbottom(var index) => Icon(index,color: Colors.grey.shade400,size: 30,);
+
+
 
