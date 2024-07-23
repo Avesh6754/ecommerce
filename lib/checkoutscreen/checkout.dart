@@ -191,13 +191,14 @@ class _CheckoutState extends State<Checkout> {
     );
   }
 }
-int total(List Cartlist)
+double total(List Cartlist)
 {
   dynamic sum=0;
   for(int i=0;i<Cartlist.length;i++)
     {
       sum=sum+Cartlist[i]['price'];
     }
+  dynamic total=(sum*18)/100;
 
-  return sum;
+  return total;
 }

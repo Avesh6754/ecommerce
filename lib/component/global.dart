@@ -9,7 +9,7 @@ List productlist = [
     "style": "Modern",
     "Model Name": "Color Fit Pluse",
     'image': 'assets/image/a1-removebg-preview.png',
-    'price': 26000,
+    'price': 26000.00,
   },
   {
     'name': 'Godrej Ac',
@@ -18,7 +18,7 @@ List productlist = [
     "style": "Modern",
     "Model Name": "Color Fit Pluse",
     'image': 'assets/image/a2-removebg-preview.png',
-    'price': 30000,
+    'price': 30000.00,
   },
   {
     'name': 'Hitachi Ac',
@@ -27,7 +27,7 @@ List productlist = [
     "style": "Classic",
     "Model Name": "Color Fit Pluse 3",
     'image': 'assets/image/a3-removebg-preview.png',
-    'price': 25000,
+    'price': 25000.00,
   },
   {
     'name': 'Dell Pc',
@@ -36,7 +36,7 @@ List productlist = [
     "style": "Modern",
     "Model Name": "Ultra Fit Pluse",
     'image': 'assets/image/c1-removebg-preview.png',
-    'price': 50000,
+    'price': 50000.00,
   },
   {
     'name': 'Boat Earphone',
@@ -45,7 +45,7 @@ List productlist = [
     "style": "Modern",
     "Model Name": "Ultra",
     'image': 'assets/image/e1-removebg-preview.png',
-    'price': 5500,
+    'price': 5500.0,
   },
   {
     'name': 'Lenovo Laptop',
@@ -54,7 +54,7 @@ List productlist = [
     "style": "Modern",
     "Model Name": "Color Fit Pluse",
     'image': 'assets/image/l1-removebg-preview.png',
-    'price': 120000,
+    'price': 12000.0,
   },
   {
     'name': 'Apple Watch',
@@ -63,7 +63,7 @@ List productlist = [
     "style": "Modern",
     "Model Name": "Color Fit Pluse",
     'image': 'assets/image/p1-removebg-preview.png',
-    'price': 18000,
+    'price': 18000.0,
   },
   {
     'name': 'Godrej Tv',
@@ -72,7 +72,7 @@ List productlist = [
     "style": "Modern",
     "Model Name": "Color Fit Pluse",
     'image': 'assets/image/t1-removebg-preview.png',
-    'price': 50000,
+    'price': 50000.0,
   },
   {
     'name': 'Lenovo Pc',
@@ -81,7 +81,7 @@ List productlist = [
     "style": "Modern",
     "Model Name": "Color Fit Pluse",
     'image': 'assets/image/c2-removebg-preview.png',
-    'price': 80000,
+    'price': 80000.0,
     'description': ""
   },
   {
@@ -91,7 +91,7 @@ List productlist = [
     "style": "Modern",
     "Model Name": "Color Fit Pluse",
     'image': 'assets/image/e2-removebg-preview.png',
-    'price': 4000,
+    'price': 4000.0,
     'description': ""
   },
   {
@@ -101,7 +101,7 @@ List productlist = [
     "style": "Modern",
     "Model Name": "Color Fit Pluse",
     'image': 'assets/image/l2-removebg-preview.png',
-    'price': 40000,
+    'price': 40000.0,
     'description': ""
   },
   {
@@ -111,7 +111,7 @@ List productlist = [
     "style": "Modern",
     "Model Name": "Color Fit Pluse",
     'image': 'assets/image/p2-removebg-preview.png',
-    'price': 18000,
+    'price': 18000.0,
     'description': ""
   },
   {
@@ -121,7 +121,7 @@ List productlist = [
     "style": "Modern",
     "Model Name": "Color Fit Pluse",
     'image': 'assets/image/l3-removebg-preview.png',
-    'price': 72000,
+    'price': 72000.0,
     'description': ""
   },
   {
@@ -131,7 +131,7 @@ List productlist = [
     "style": "Modern",
     "Model Name": "Color Fit Pluse",
     'image': 'assets/image/p3-removebg-preview.png',
-    'price': 185000,
+    'price': 185000.0,
     'description': ""
   },
   {
@@ -141,7 +141,7 @@ List productlist = [
     "style": "Modern",
     "Model Name": "Color Fit Pluse",
     'image': 'assets/image/p4-removebg-preview.png',
-    'price': 22000,
+    'price': 22000.0,
     'description': ""
   },
   {
@@ -151,7 +151,7 @@ List productlist = [
     "style": "Modern",
     "Model Name": "Color Fit Pluse",
     'image': 'assets/image/c2-removebg-preview.png',
-    'price': 80000,
+    'price': 80000.0,
     'description': ""
   },
 ];
