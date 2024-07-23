@@ -25,15 +25,12 @@ class _CheckoutState extends State<Checkout> {
                         Navigator.of(context).pushReplacementNamed('/home');
                       },
                       child: Icon(Icons.arrow_back_ios_new_outlined)),
-                  SizedBox(
-                    width: 80,
+                  Spacer(),
+                  Text(
+                    'Checkout ',
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
-                  Align(alignment: Alignment.center,
-                    child: Text(
-                      '     Checkout ',
-                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                    ),
-                  ),
+                  Spacer(),
                 ],
               ),
             ),
@@ -42,7 +39,7 @@ class _CheckoutState extends State<Checkout> {
             ),
             lineudf(),
             SizedBox(
-              height: 15,
+              height: 2,
             ),
             Column(
               children: [
@@ -83,8 +80,7 @@ class _CheckoutState extends State<Checkout> {
       ),
     );
   }
-  Stack Cartudf(
-      String name, int price,  String img,int index) {
+  Widget Cartudf(String name, int price, String img, int index) {
     return Stack(
       children: [
         Container(
@@ -93,36 +89,31 @@ class _CheckoutState extends State<Checkout> {
           width: double.infinity,
           decoration: BoxDecoration(
               color: Colors.white,
+              borderRadius: BorderRadius.circular(15),
               border: Border.all(color: Colors.grey, width: 0.2)),
           // alignment: Alignment.topRight,
           child: Padding(
-            padding: const EdgeInsets.only(left: 0),
+            padding: const EdgeInsets.only(left: 90),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
-                    margin: EdgeInsets.only(left: 90),
+                    margin: EdgeInsets.only(left: 20),
                     height: 30,
                     width: 90,
                     child: Image(
                         image:
                         AssetImage('assets/image/2-removebg-preview.png'))),
-                Padding(
-                  padding: const EdgeInsets.only(left: 120),
-                  child: Text(
-                    '${name}',
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                  ),
+                Text(
+                  '    ${name}',
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 67),
-                  child: Text(
-                    '\$${price}',
-                    style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.red),
-                  ),
+                Text(
+                  '\$${price}',
+                  style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.red),
                 ),
                 SizedBox(
                   height: 50,
@@ -171,10 +162,11 @@ class _CheckoutState extends State<Checkout> {
           ),
         ),
         Container(
-          height: 197,
-          margin: EdgeInsets.fromLTRB(16, 17, 15, 0),
+          height: 199,
+          margin: EdgeInsets.fromLTRB(16, 15, 15, 0),
           width: 149,
           decoration: BoxDecoration(
+              borderRadius: BorderRadius.only(topLeft: Radius.circular(15),bottomLeft: Radius.circular(15)),
               color: Colors.grey.shade100,
               image: DecorationImage(
                 image: AssetImage('$img'),
