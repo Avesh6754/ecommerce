@@ -11,18 +11,16 @@ class Splashscreen extends StatefulWidget {
 }
 
 class _SplashscreenState extends State<Splashscreen> {
-  @override
-  void initState() {
-    super.initState();
-
-    Timer(const Duration(seconds: 2), () {
-      Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => const Homepage()));
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
+    Timer(Duration(seconds: 3),
+          () {
+        Navigator.of(context).pushReplacementNamed('/home');
+      },
+    );
+    double height = MediaQuery.of(context).size.height;
+    double width = MediaQuery.of(context).size.width;
     return Scaffold(
         body: Center(
       child: Column(
@@ -30,14 +28,15 @@ class _SplashscreenState extends State<Splashscreen> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
-            height: 500,
-            width: 500,
+            height: height ,
+            width: width ,
             decoration: const BoxDecoration(
                 image: DecorationImage(
               image: AssetImage(
                   'assets/image/abstract-modern-ecommerce-logo-ecommerce-logo-design-shop-logo-design-template-creative-ecommerce-logo-vector-removebg-preview.png'),
             )),
-          )
+          ),
+
         ],
       ),
     ));
