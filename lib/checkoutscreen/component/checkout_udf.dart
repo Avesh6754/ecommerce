@@ -4,7 +4,7 @@ import '../../component/global.dart';
 
 Widget Cartudf(String name, double price, String img, int index) {
   return StatefulBuilder(
-    builder: (context, setState) =>Stack(
+    builder: (context, setState) => Stack(
       children: [
         Container(
           height: 200,
@@ -26,7 +26,7 @@ Widget Cartudf(String name, double price, String img, int index) {
                     width: 90,
                     child: Image(
                         image:
-                        AssetImage('assets/image/2-removebg-preview.png'))),
+                            AssetImage('assets/image/2-removebg-preview.png'))),
                 Text(
                   '    ${name}',
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
@@ -89,7 +89,9 @@ Widget Cartudf(String name, double price, String img, int index) {
           margin: EdgeInsets.fromLTRB(16, 15, 15, 0),
           width: 149,
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.only(topLeft: Radius.circular(15),bottomLeft: Radius.circular(15)),
+              borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(15),
+                  bottomLeft: Radius.circular(15)),
               color: Colors.grey.shade100,
               image: DecorationImage(
                 image: AssetImage('$img'),
@@ -115,18 +117,17 @@ Widget Cartudf(String name, double price, String img, int index) {
   );
 }
 
-double total(List Cartlist)
-{
-  dynamic sum=0,amount=0;
-  for(int i=0;i<Cartlist.length;i++)
-  {
-    sum=sum+Cartlist[i]['price'];
+double total(List Cartlist) {
+  dynamic sum = 0, amount = 0;
+  for (int i = 0; i < Cartlist.length; i++) {
+    sum = sum + Cartlist[i]['price'];
   }
-  sum +=(sum*18)/100;
-  amount=amount+sum;
+  sum += (sum * 18) / 100;
+  amount = amount + sum;
 
   return amount;
 }
+
 GestureDetector checkoutamount(BuildContext context) {
   return GestureDetector(
     onTap: () {

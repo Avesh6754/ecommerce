@@ -26,7 +26,7 @@ Widget Cartudf(String name, double price, String img, int index) {
                     width: 90,
                     child: Image(
                         image:
-                        AssetImage('assets/image/2-removebg-preview.png'))),
+                            AssetImage('assets/image/2-removebg-preview.png'))),
                 Text(
                   '    ${name}',
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
@@ -89,7 +89,9 @@ Widget Cartudf(String name, double price, String img, int index) {
           margin: EdgeInsets.fromLTRB(16, 15, 15, 0),
           width: 149,
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.only(topLeft: Radius.circular(15),bottomLeft: Radius.circular(15)),
+              borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(15),
+                  bottomLeft: Radius.circular(15)),
               color: Colors.grey.shade100,
               image: DecorationImage(
                 image: AssetImage('$img'),
@@ -114,6 +116,7 @@ Widget Cartudf(String name, double price, String img, int index) {
     ),
   );
 }
+
 GestureDetector bottomcard(BuildContext context) {
   return GestureDetector(
     onTap: () {
@@ -136,4 +139,3 @@ GestureDetector bottomcard(BuildContext context) {
     ),
   );
 }
-

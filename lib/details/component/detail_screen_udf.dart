@@ -12,6 +12,7 @@ Container colorudf(Color color) {
     decoration: BoxDecoration(shape: BoxShape.circle, color: color),
   );
 }
+
 Row brandudf(String name, String subname) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -28,11 +29,12 @@ Row brandudf(String name, String subname) {
     ],
   );
 }
+
 Text detail_text_udf(
     {required List productlist,
-      required int selectedindex,
-      required String key,
-      required Color color}) {
+    required int selectedindex,
+    required String key,
+    required Color color}) {
   return Text(
     (key == 'price')
         ? '\$ ${productlist[selectedindex]['$key']}/-'
@@ -48,8 +50,7 @@ Expanded detail_image() {
       width: double.infinity,
       decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage(
-                  '${productlist[selectedindex]['image']}'))),
+              image: AssetImage('${productlist[selectedindex]['image']}'))),
     ),
   );
 }
@@ -58,8 +59,7 @@ Row color_option() {
   return Row(
     mainAxisAlignment: MainAxisAlignment.start,
     children: [
-      ...List.generate(colorlist.length,
-              (index) => colorudf(colorlist[index]))
+      ...List.generate(colorlist.length, (index) => colorudf(colorlist[index]))
     ],
   );
 }
@@ -111,17 +111,20 @@ Row rowicon(BuildContext context) {
 Row starudf() {
   return Row(
     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-    children: [ Container(
-        height: 30,
-        width: 90,
-        child: Image(
-            image: AssetImage(
-                'assets/image/2-removebg-preview.png'))),
-
-      Text('Available in stock ',style: TextStyle(fontSize: 10,color: Colors.green),)
+    children: [
+      Container(
+          height: 30,
+          width: 90,
+          child:
+              Image(image: AssetImage('assets/image/2-removebg-preview.png'))),
+      Text(
+        'Available in stock ',
+        style: TextStyle(fontSize: 10, color: Colors.green),
+      )
     ],
   );
 }
+
 Row row1() {
   return Row(
     mainAxisAlignment: MainAxisAlignment.spaceBetween,

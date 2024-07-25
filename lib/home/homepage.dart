@@ -77,8 +77,6 @@ class _HomepageState extends State<Homepage> {
       bottomNavigationBar: Bottom(),
     );
   }
-
-
 }
 
 var selectedindex = 0;

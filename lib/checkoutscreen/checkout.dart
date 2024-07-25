@@ -3,6 +3,7 @@ import 'package:ecommerce/Addtocart/cartscreen.dart';
 
 import '../component/global.dart';
 import 'component/checkout_udf.dart';
+
 class Checkout extends StatefulWidget {
   const Checkout({super.key});
 
@@ -14,6 +15,7 @@ class _CheckoutState extends State<Checkout> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -46,13 +48,11 @@ class _CheckoutState extends State<Checkout> {
               children: [
                 ...List.generate(
                     Cartlist.length,
-                        (index) =>
-                        Cartudf(
+                    (index) => Cartudf(
                           Cartlist[index]['name'],
                           Cartlist[index]['price'],
                           Cartlist[index]['image'],
                           index,
-
                         ))
               ],
             )
@@ -62,7 +62,4 @@ class _CheckoutState extends State<Checkout> {
       bottomNavigationBar: checkoutamount(context),
     );
   }
-
-
-  }
-
+}

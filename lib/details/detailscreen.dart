@@ -84,8 +84,4 @@ class _DetailscreenState extends State<Detailscreen> {
       bottomNavigationBar: bottomappbar(context),
     );
   }
-
-
-
-
 }

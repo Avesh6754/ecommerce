@@ -29,8 +29,7 @@ Widget productbox(
             height: 30,
             width: 90,
             child: Image(
-                image: AssetImage(
-                    'assets/image/2-removebg-preview.png'))),
+                image: AssetImage('assets/image/2-removebg-preview.png'))),
         Text(
           "$Name",
           style: const TextStyle(
@@ -48,7 +47,6 @@ Widget productbox(
     ),
   );
 }
-
 
 Text Home_Text(
     {required String temp, required double number, required Color color}) {
