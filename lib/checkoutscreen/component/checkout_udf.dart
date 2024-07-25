@@ -125,6 +125,7 @@ double total(List Cartlist) {
   sum += (sum * 18) / 100;
 
   return sum;
+
 }
 
 GestureDetector checkoutamount(BuildContext context) {
