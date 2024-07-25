@@ -53,9 +53,166 @@ Before diving into code, let's outline the primary screens and their functionali
   * Calculate and display the total amount, including shipping and taxes if applicable.
   * Provide payment options and a "Place Order" button.
 
+#Detail of Widget
+## Understanding Core Flutter Widgets for E-commerce App
 
-**Would you like to delve deeper into a specific screen or feature?**
+### Layout Widgets
 
+#### Row and Column
+* **Purpose:** Arrange child widgets horizontally (Row) or vertically (Column).
+* **Example:**
+  ```dart
+  Row(
+    children: [
+      Image.asset('assets/product_image.png'),
+      Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text('Product Name'),
+          Text('Price: \$19.99'),
+        ],
+      ),
+    ],
+  )
+  ```
+
+#### Expanded
+* **Purpose:** Makes a child widget expand to fill available space.
+* **Example:**
+  ```dart
+  Row(
+    children: [
+      Expanded(child: Image.asset('assets/product_image.png')),
+      Expanded(
+        child: Column(
+          // ...
+        ),
+      ),
+    ],
+  )
+  ```
+
+### Scrolling Widgets
+
+#### ListView and GridView
+* **Purpose:** Display scrollable lists of items.
+* **Example:**
+  ```dart
+  ListView.builder(
+    itemCount: products.length,
+    itemBuilder: (context, index) {
+      return ListTile(
+        title: Text(products[index].name),
+        subtitle: Text(products[index].description),
+        leading: Image.network(products[index].imageUrl),
+      );
+    },
+  )
+  ```
+
+#### SingleChildScrollView
+* **Purpose:** Creates a scrollable view with a single child.
+* **Example:**
+  ```dart
+  SingleChildScrollView(
+    child: Column(
+      children: [
+        // Long list of items
+      ],
+    ),
+  )
+  ```
+
+### Container
+* **Purpose:** A container that can be used to add padding, margin, decoration, and constraints to a child widget.
+* **Example:**
+  ```dart
+  Container(
+    padding: EdgeInsets.all(16),
+    decoration: BoxDecoration(
+      color: Colors.white,
+      borderRadius: BorderRadius.circular(8),
+    ),
+    child: Text('Product Description'),
+  )
+  ```
+
+### Sizing and Positioning
+
+#### MediaQuery
+* **Purpose:** Access device-specific information like screen size, orientation, and padding.
+* **Example:**
+  ```dart
+  double screenWidth = MediaQuery.of(context).size.width;
+  ```
+
+#### SizedBox
+* **Purpose:** Adds fixed-size empty space.
+* **Example:**
+  ```dart
+  SizedBox(height: 16)
+  ```
+
+#### Spacer
+* **Purpose:** Adds flexible space between widgets in a Row or Column.
+* **Example:**
+  ```dart
+  Row(
+    children: [
+      Text('Product Name'),
+      Spacer(),
+      Icon(Icons.favorite),
+    ],
+  )
+  ```
+
+#### Align
+* **Purpose:** Aligns a child widget within its parent.
+* **Example:**
+  ```dart
+  Align(
+    alignment: Alignment.center,
+    child: Text('Centered Text'),
+  )
+  ```
+
+### Image and Text
+
+#### Image.asset and Image.network
+* **Purpose:** Display images from local assets or remote URLs.
+* **Example:**
+  ```dart
+  Image.asset('assets/product_image.png')
+  Image.network('https://example.com/image.jpg')
+  ```
+
+#### Text
+* **Purpose:** Displays text.
+* **Example:**
+  ```dart
+  Text('Product Name', style: TextStyle(fontWeight: FontWeight.bold))
+  ```
+
+#### Icon
+* **Purpose:** Displays icons.
+* **Example:**
+  ```dart
+  Icon(Icons.shopping_cart)
+  ```
+
+#### TextDecoration
+* **Purpose:** Applies decorations like underline, strikethrough, etc. to text.
+* **Example:**
+  ```dart
+  Text('Sale', style: TextStyle(decoration: TextDecoration.lineThrough))
+  ```
+
+### Additional Widgets
+
+* **ElevatedButton, TextButton, OutlinedButton:** Create buttons with different styles.
+* **TextFormField:** Create input fields for user input.
+* **DropdownButton:** Create dropdown menus.
+* **CircularProgressIndicator, LinearProgressIndicator:** Display progress indicators.
 <h1 align="center">Task</h1>
 <p>
  
