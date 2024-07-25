@@ -44,7 +44,7 @@ class _HomepageState extends State<Homepage> {
                           border: Border.all(color: Colors.black26, width: 1),
                           shape: BoxShape.circle,
                           color: Colors.grey.shade100,
-                          image: DecorationImage(
+                          image: const DecorationImage(
                               image: AssetImage(
                                 'assets/image/7931789-removebg-preview.png',
                               ),

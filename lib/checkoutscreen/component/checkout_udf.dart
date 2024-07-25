@@ -4,7 +4,7 @@ import '../../component/global.dart';
 
 Widget Cartudf(String name, double price, String img, int index) {
   return StatefulBuilder(
-    builder: (context, setState) => Stack(
+    builder: (context, setState) =>Stack(
       children: [
         Container(
           height: 200,
@@ -114,26 +114,39 @@ Widget Cartudf(String name, double price, String img, int index) {
     ),
   );
 }
-GestureDetector bottomcard(BuildContext context) {
+
+double total(List Cartlist)
+{
+  dynamic sum=0,amount=0;
+  for(int i=0;i<Cartlist.length;i++)
+  {
+    sum=sum+Cartlist[i]['price'];
+  }
+  sum +=(sum*18)/100;
+  amount=amount+sum;
+
+  return amount;
+}
+GestureDetector checkoutamount(BuildContext context) {
   return GestureDetector(
     onTap: () {
-      Navigator.of(context).pushNamed('/Check');
+      Navigator.of(context).pushNamed('/home');
     },
-    child: Container(
-      margin: EdgeInsets.fromLTRB(15, 0, 15, 15),
-      height: 60,
-      width: double.infinity,
-      decoration: BoxDecoration(color: Colors.red),
-      alignment: Alignment.center,
-      child: Text(
-        'Checkout',
-        style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
-            letterSpacing: 1,
-            fontSize: 15),
+    child: Padding(
+      padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+      child: BottomAppBar(
+        height: 50,
+        color: Colors.red,
+        child: Align(
+            alignment: Alignment.center,
+            child: Text(
+              'Total Amount : ${total(Cartlist)}/-',
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  letterSpacing: 1),
+            )),
       ),
     ),
   );
 }
-
