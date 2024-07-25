@@ -118,14 +118,13 @@ Widget Cartudf(String name, double price, String img, int index) {
 }
 
 double total(List Cartlist) {
-  dynamic sum = 0, amount = 0;
+  dynamic sum = 0;
   for (int i = 0; i < Cartlist.length; i++) {
     sum = sum + Cartlist[i]['price'];
   }
   sum += (sum * 18) / 100;
-  amount = amount + sum;
 
-  return amount;
+  return sum;
 }
 
 GestureDetector checkoutamount(BuildContext context) {
