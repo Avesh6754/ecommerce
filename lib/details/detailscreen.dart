@@ -40,37 +40,37 @@ class _DetailscreenState extends State<Detailscreen> {
                   children: [
                     row1(),
                     starudf(),
-                    SizedBox(
+                    const SizedBox(
                       height: 15,
                     ),
                     lineudf(),
-                    SizedBox(
+                    const SizedBox(
                       height: 15,
                     ),
                     Home_Text(
                         temp: 'Color Variant', number: 15, color: Colors.black),
-                    SizedBox(
+                    const SizedBox(
                       height: 15,
                     ),
                     color_option(),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
                     lineudf(),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     brandudf('Brand', productlist[selectedindex]['Brand']),
-                    SizedBox(
+                    const SizedBox(
                       height: 12,
                     ),
                     brandudf(
                         'Model Name', productlist[selectedindex]['Model Name']),
-                    SizedBox(
+                    const SizedBox(
                       height: 12,
                     ),
                     brandudf('Colour', productlist[selectedindex]['Color']),
-                    SizedBox(
+                    const SizedBox(
                       height: 12,
                     ),
                     brandudf('Style', productlist[selectedindex]['style']),

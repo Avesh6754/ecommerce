@@ -63,7 +63,7 @@ class _CartscreenState extends State<Cartscreen> {
       children: [
         Container(
           height: 200,
-          margin: EdgeInsets.fromLTRB(15, 15, 15, 0),
+          margin: const EdgeInsets.fromLTRB(15, 15, 15, 0),
           width: double.infinity,
           decoration: BoxDecoration(
               color: Colors.white,
@@ -79,7 +79,7 @@ class _CartscreenState extends State<Cartscreen> {
                     margin: EdgeInsets.only(left: 20),
                     height: 30,
                     width: 90,
-                    child: Image(
+                    child: const Image(
                         image:
                         AssetImage('assets/image/2-removebg-preview.png'))),
                 Text(
@@ -88,16 +88,16 @@ class _CartscreenState extends State<Cartscreen> {
                 ),
                 Text(
                   '    \$${price}',
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                       color: Colors.red),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 50,
                 ),
                 Padding(
-                  padding: EdgeInsets.only(right: 70),
+                  padding: const EdgeInsets.only(right: 70),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
@@ -110,14 +110,14 @@ class _CartscreenState extends State<Cartscreen> {
                         ),
                         child: Icon(Icons.remove),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
-                      Text(
+                      const Text(
                         '1',
                         style: TextStyle(fontSize: 20),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                       Container(
@@ -127,7 +127,7 @@ class _CartscreenState extends State<Cartscreen> {
                           color: Colors.red,
                           borderRadius: BorderRadius.circular(10),
                         ),
-                        child: Icon(
+                        child: const Icon(
                           Icons.add,
                           color: Colors.white,
                         ),

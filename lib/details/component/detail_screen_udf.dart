@@ -117,7 +117,7 @@ Row starudf() {
           width: 90,
           child:
               Image(image: AssetImage('assets/image/2-removebg-preview.png'))),
-      Text(
+      const Text(
         'Available in stock ',
         style: TextStyle(fontSize: 10, color: Colors.green),
       )
